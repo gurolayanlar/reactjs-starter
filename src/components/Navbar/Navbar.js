@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -11,9 +12,9 @@ class Navbar extends React.Component {
                 <div className="inner">
                     <h3 className="masthead-brand">Example</h3>
                     <nav className="nav nav-masthead justify-content-center">
-                        <a className="nav-link" href="/">Home</a>
-                        <a className="nav-link" href="/about">About</a>
-                        <a className="nav-link" href="/contact">Contact</a>
+                        <Link className="nav-link" to={"/"}>Home</Link>
+                        <Link className="nav-link" to={"/about"}>About</Link>
+                        <Link className="nav-link" to={"/contact"}>Contact</Link>
                     </nav>
                 </div>
             </header>
