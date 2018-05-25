@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -12,9 +12,9 @@ class Navbar extends React.Component {
                 <div className="inner">
                     <h3 className="masthead-brand">Example</h3>
                     <nav className="nav nav-masthead justify-content-center">
-                        <Link className="nav-link" to={"/"}>Home</Link>
-                        <Link className="nav-link" to={"/about"}>About</Link>
-                        <Link className="nav-link" to={"/contact"}>Contact</Link>
+                        <NavLink exact className="nav-link" to={"/"}>Home</NavLink>
+                        <NavLink className="nav-link" to={"/about"}>About</NavLink>
+                        <NavLink className="nav-link" to={"/contact"}>Contact</NavLink>
                     </nav>
                 </div>
             </header>
