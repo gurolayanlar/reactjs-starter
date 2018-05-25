@@ -15,5 +15,5 @@ Run the following command for build
 npm run build
 ```
 
-## Roadmap
+## Next step
 - Heroku implementation
